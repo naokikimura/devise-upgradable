@@ -1,3 +1,4 @@
+require "devise"
 require "devise/upgradable/railtie"
 
 module Devise
@@ -5,3 +6,5 @@ module Devise
     # Your code goes here...
   end
 end
+
+Devise.add_module(:upgradable, model: true)

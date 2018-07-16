@@ -9,14 +9,14 @@ Gem::Specification.new do |s|
   s.version     = Devise::Upgradable::VERSION
   s.authors     = ["naokikimura"]
   s.email       = ["n.kimura.cap@gmail.com"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of Devise::Upgradable."
-  s.description = "TODO: Description of Devise::Upgradable."
+  s.homepage    = "https://github.com/naokikimura/devise-upgradable"
+  s.summary     = "Implemention for painless password-hash upgrades on Devise."
   s.license     = "MIT"
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
 
-  s.add_dependency "rails", "~> 5.2.0"
+  s.add_dependency "devise", ">= 2.1.0"
 
+  s.add_development_dependency "rails", "~> 5.2.0"
   s.add_development_dependency "sqlite3"
 end
